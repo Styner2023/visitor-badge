@@ -27,7 +27,7 @@ def invalid_count_resp(err_msg) -> Response:
 
 
 def update_counter(key):
-    url = 'http://127.0.0.1:8080/count?keyword=wiken-visitor-badge'.format(key)
+    url = 'http://127.0.0.1:8080/count?keyword=wiken-visitor-badge-{0}'.format(key)
     try:
         resp = requests.get(url)
         if resp and resp.status_code == 200:
