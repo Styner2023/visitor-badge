@@ -24,7 +24,8 @@ and glyphs not present in Deja Vu Sans (the default font) may be rendered very p
 pybadges does not have any explicit support for languages that are written right-to-left (e.g. Arabic, Hebrew) and the displayed text direction may be incorrect:  
  
 - **2020.07.17**  
-Change count-api to my own service. It facilitates later functions (statistics, data backup, etc.)
+Change count-api to my own service, optimize the counting speed. 
+It facilitates later functions (statistics, data backup, etc.)
 
 #### Fork From
 > [https://github.com/jwenjian/visitor-badge](https://github.com/jwenjian/visitor-badge)
