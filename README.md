@@ -1,4 +1,6 @@
-![visitor badge](https://visitor-badge.laobi.icu/badge?page_id=jwenjian.visitor-badge)
+![visitor badge](https://visitor-badge.laobi.icu/badge?page_id=jwenjian.visitor-badge)  
+
+[中文](https://github.com/hehuapei/visitor-badge/blob/master/readme_cn.md)
 
 #### Project Home
 > [https://visitor-badge.laobi.icu](https://visitor-badge.laobi.icu)
@@ -28,4 +30,4 @@ Change count-api to my own service, optimize the counting speed.
 It facilitates later functions (data analysis, data backup, etc.)
 
 #### Fork From
-> [https://github.com/jwenjian/visitor-badge](https://github.com/jwenjian/visitor-badge)
+> jwenjian: [https://github.com/jwenjian/visitor-badge](https://github.com/jwenjian/visitor-badge)
