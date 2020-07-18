@@ -27,7 +27,7 @@ pybadges does not have any explicit support for languages that are written right
  
 - **2020.07.17**  
 1. 切换计数接口为我自己的服务，优化计数速度，可承受更大数量的并发访问。（计数会继承之前公共接口中的数量，不用担心会从1开始计算！）  
-2. 切换为自己的服务，有利于只要要开发的新功能（如：数据备份，数据分析等等...）
+2. 切换为自己的服务，有利于新功能的开发（如：数据备份，数据分析等等...）
 
 #### 原作者
 > jwenjian：[https://github.com/jwenjian/visitor-badge](https://github.com/jwenjian/visitor-badge)
