@@ -26,7 +26,7 @@ and glyphs not present in Deja Vu Sans (the default font) may be rendered very p
 pybadges does not have any explicit support for languages that are written right-to-left (e.g. Arabic, Hebrew) and the displayed text direction may be incorrect:  
  
 - **2020.07.17**  
-切换计数接口为我自己的服务，优化计数速度。（计数会继承之前公共接口中的数量，不用担心会从1开始计算！）  
+切换计数接口为我自己的服务，优化计数速度，可承受更大数量的并发访问。（计数会继承之前公共接口中的数量，不用担心会从1开始计算！）  
 切换为自己的服务，有利于只要要开发的新功能（如：数据备份，数据分析等等...）
 
 #### 原作者
