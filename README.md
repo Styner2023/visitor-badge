@@ -18,7 +18,7 @@ change title:
 #### Feature
 
 - **2020.07.19**  
-1.Daily data backup: Perform data backup and push to GitHub warehouse at 0 o 'clock per day  
+1. Daily data backup: Perform data backup and push to GitHub warehouse at 0 o 'clock per day  
 
 - **2020.07.18**  
 1. You can use parameter 'title' to change badge's title！  
