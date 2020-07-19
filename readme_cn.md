@@ -1,4 +1,4 @@
-![visitor badge](https://visitor-badge.laobi.icu/badge?page_id=jwenjian.visitor-badge-cn)
+![visitor badge](https://visitor-badge.laobi.icu/badge?page_id=jwenjian.visitor-badge-cn&title=浏%20览%20次%20数)
 
 [English](https://github.com/hehuapei/visitor-badge/blob/master/README.md)
 
