@@ -18,7 +18,7 @@ def invalid_count_resp(err_msg) -> Response:
     :return: A response with invalid request badge
     """
     svg = badge(left_text="Error", right_text=err_msg,
-                whole_link="https://github.com/jwenjian/visitor-badge")
+                whole_link="https://visitor-badge.laobi.icu")
     expiry_time = datetime.datetime.utcnow() - datetime.timedelta(minutes=10)
 
     headers = {'Cache-Control': 'no-cache,max-age=0', 'Expires': expiry_time.strftime("%a, %d %b %Y %H:%M:%S GMT")}
@@ -60,7 +60,9 @@ def visitor_svg() -> Response:
     if title is None or len(title) == 0:
         title = 'visitors'
 
-    svg = badge(left_text=title, right_text=str(latest_count))
+    home = "https://visitor-badge.laobi.icu"
+
+    svg = badge(left_text=title, right_text=str(latest_count), right_link=home, left_link=home)
 
     expiry_time = datetime.datetime.utcnow() - datetime.timedelta(minutes=10)
 
