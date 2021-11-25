@@ -56,14 +56,27 @@ def visitor_svg() -> Response:
     if not latest_count:
         return invalid_count_resp("Count API Failed")
 
-    title = request.args.get('title')
-    if title is None or len(title) == 0:
-        title = 'visitors'
+    # get left color and right color
+    left_color = "#595959" 
+    if request.args.get("left_color") is not None:
+      left_color = request.args.get("left_color")
+    
+    right_color = "#1283c3"
+    if request.args.get("right_color") is not None:
+      right_color = request.args.get("right_color")
+
+    left_text = request.args.get("left_text")
+
+    if left_text is None or len(left_text) == 0:
+        left_text = request.args.get('title')
+
+    if left_text is None or len(left_text) == 0:
+    	left_text = 'visitors'
+    
 
     home = "https://visitor-badge.laobi.icu"
 
-    svg = badge(left_text=title, right_text=str(latest_count), right_link=home, left_link=home)
-
+    svg = badge(left_text=left_text, right_text=str(latest_count), left_color=str(left_color), right_color=str(right_color), right_link=home, left_link=home)
     expiry_time = datetime.datetime.utcnow() - datetime.timedelta(minutes=10)
 
     headers = {'Cache-Control': 'no-cache,max-age=0,no-store,s-maxage=0,proxy-revalidate',
@@ -89,4 +102,4 @@ def identity_request_source() -> str:
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='127.0.0.1',port=55000)
