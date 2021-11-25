@@ -65,9 +65,7 @@ def visitor_svg() -> Response:
     if request.args.get("right_color") is not None:
       right_color = request.args.get("right_color")
 
-    left_text = "visitors"
-    if request.args.get("left_text") is not None:
-        left_text = request.args.get("left_text")
+    left_text = request.args.get("left_text")
 
     if left_text is None or len(left_text) == 0:
         left_text = request.args.get('title')
