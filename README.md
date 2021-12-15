@@ -1,7 +1,5 @@
 ![visitor badge](https://visitor-badge.laobi.icu/badge?page_id=jwenjian.visitor-badge)  
 
-[中文](https://github.com/hehuapei/visitor-badge/blob/master/readme_cn.md)
-
 #### Project Home
 > [https://visitor-badge.laobi.icu](https://visitor-badge.laobi.icu)
 
