@@ -26,11 +26,13 @@
 ```
 ![visitor badge](https://visitor-badge.laobi.icu/badge?page_id=jwenjian.visitor-badge&left_text=My%20Page%20Visitors)
 
-- customzied color
+- customzied color(RGB colors see also [#6](/../../issues/6))
 
-```markdown
+```markdown 
 ![visitor badge](https://visitor-badge.laobi.icu/badge?page_id=jwenjian.visitor-badge&left_color=red&right_color=green) 
+RGB colors eg: #595959 needs to be %23595959 in the URL
 ```
+
 
 ![visitor badge](https://visitor-badge.laobi.icu/badge?page_id=jwenjian.visitor-badge&left_color=red&right_color=green) (left_color=red, right_color=green)
 
