@@ -52,7 +52,17 @@ RGB colors eg: #595959 needs to be %23595959 in the URL
 
 ![visitor badge](https://visitor-badge.laobi.icu/badge?page_id=jwenjian.visitor-badge&left_color=red&right_color=green&left_text=Hello%20Visitors) (left_color=red, right_color=green, left_text=Hello%20Visitors)
 
+- Only query the counter state without updating it [#6](/../../issues/6)
+```markdown
+![visitor badge](https://visitor-badge.laobi.icu/badge?page_id=jwenjian.visitor-badge&query_only=true)
+```
+
+![visitor badge](https://visitor-badge.laobi.icu/badge?page_id=jwenjian.visitor-badge&query_only=true)
+
+
 #### Feature
+- **2021.06.14**  
+1. add new parameters: query_only
 
 - **2020.07.19**  
 1. Daily data backup: Perform data backup and push to GitHub warehouse at 0 o 'clock per day  
