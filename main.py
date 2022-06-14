@@ -26,8 +26,8 @@ def invalid_count_resp(err_msg) -> Response:
     return Response(response=svg, content_type="image/svg+xml", headers=headers)
 
 
-def update_counter(key):
-    url = 'http://127.0.0.1:8080/count?keyword={0}'.format(key)
+def update_counter(key, action):
+    url = 'http://127.0.0.1:8080/count?keyword={0}'.format(key).'&action='.action
     try:
         resp = requests.get(url)
         if resp and resp.status_code == 200:
@@ -36,7 +36,6 @@ def update_counter(key):
             return None
     except Exception as e:
         return None
-
 
 @app.route("/badge")
 def visitor_svg() -> Response:
@@ -51,7 +50,12 @@ def visitor_svg() -> Response:
     if not req_source:
         return invalid_count_resp('Missing required param: page_id')
 
-    latest_count = update_counter(req_source)
+    action = "update"
+    if request.args.get("query_only") is not None:
+        action = "query"
+
+    # get count
+    latest_count = update_counter(req_source, action)
 
     if not latest_count:
         return invalid_count_resp("Count API Failed")
