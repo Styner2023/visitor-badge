@@ -52,7 +52,7 @@ RGB colors eg: #595959 needs to be %23595959 in the URL
 
 ![visitor badge](https://visitor-badge.laobi.icu/badge?page_id=jwenjian.visitor-badge&left_color=red&right_color=green&left_text=Hello%20Visitors) (left_color=red, right_color=green, left_text=Hello%20Visitors)
 
-- Only query the counter state without updating it [#6](/../../issues/6)
+- Only query the counter state without updating it [#7](/../../issues/7)
 ```markdown
 ![visitor badge](https://visitor-badge.laobi.icu/badge?page_id=jwenjian.visitor-badge-query&query_only=true)
 ```
