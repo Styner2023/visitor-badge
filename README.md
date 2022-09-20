@@ -60,8 +60,19 @@ RGB colors eg: #595959 needs to be %23595959 in the URL
 ![visitor badge](https://visitor-badge.laobi.icu/badge?page_id=jwenjian.visitor-badge-query&query_only=true)
 
 
+- format unit of count (default is `disable`) [#4](/../../issues/4)
+
+```markdown
+![visitor badge](https://visitor-badge.laobi.icu/badge?page_id=jwenjian.visitor-badge&format=true)
+```
+![visitor badge](https://visitor-badge.laobi.icu/badge?page_id=jwenjian.visitor-badge&format=true)
+
+
 #### Feature
-- **2021.06.14**  
+- **2022.09.20**  
+1. add new parameters: format
+
+- **2022.06.14**  
 1. add new parameters: query_only
 
 - **2020.07.19**  

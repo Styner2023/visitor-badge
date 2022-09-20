@@ -37,6 +37,14 @@ def update_counter(key, action):
     except Exception as e:
         return None
 
+def format_count(count):
+    count = float('{:.3g}'.format(count))
+    magnitude = 0
+    while abs(count) >= 1000:
+        magnitude += 1
+        count /= 1000.0
+    return '{}{}'.format('{:f}'.format(count).rstrip('0').rstrip('.'), ['', 'K', 'M', 'B', 'T'][magnitude])
+
 @app.route("/badge")
 def visitor_svg() -> Response:
     """
@@ -76,7 +84,10 @@ def visitor_svg() -> Response:
 
     if left_text is None or len(left_text) == 0:
     	left_text = 'visitors'
-    
+
+    if request.args.get("format") is not None:
+        latest_count = format_count(latest_count)
+
 
     home = "https://visitor-badge.laobi.icu"
 
