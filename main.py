@@ -27,7 +27,7 @@ def invalid_count_resp(err_msg) -> Response:
 
 
 def update_counter(key, action):
-    url = 'http://127.0.0.1:8080/count?keyword={0}'.format(key).'&action='.action
+    url = 'http://127.0.0.1:8080/count?keyword={0}&action=={1}'.format(key,action)
     try:
         resp = requests.get(url)
         if resp and resp.status_code == 200:
